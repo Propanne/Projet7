@@ -1,0 +1,41 @@
+$color-primary: #FD2D01;
+$color-secondary: #FFD7D7;
+$color-tertiary: #4E5166;
+
+.font-color{
+  &-tertiary{
+    color: $color-tertiary;
+  }
+}
+.bg-color{
+  &-secondary{
+    background-color: $color-secondary;
+  }
+}
+#login_card{
+  background-color: $color-tertiary;
+  color: $color-secondary;
+  border-radius: 25px
+}
+.login{
+  &-button{
+    &-border{
+      border-color: $color-tertiary;
+    }
+    &:hover{
+      background-color: darken($color-secondary, 3%);
+      color: darken($color-tertiary, 3%);
+      border-color: darken($color-tertiary, 3%);
+    }
+  }
+}
+.text{
+  &-align{
+    &-center{
+      text-align:center;
+    }
+    &-left{
+      text-align:left;
+    }
+  }
+}
