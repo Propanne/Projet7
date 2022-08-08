@@ -8,6 +8,7 @@ Modules React:
 - prop-types => Gestion des types de props attendues
 - styled-components => Gestion des CSS scop
 - node-sass => Gestion des fichiers scss
+- react-helmet => Gestion des head tags
 
 # Frameworks/Librairies
 Ce projet utilise les frameworks/librairies suivnantes:

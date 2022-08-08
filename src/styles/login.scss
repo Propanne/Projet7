@@ -12,6 +12,12 @@ $color-tertiary: #4E5166;
     background-color: $color-secondary;
   }
 }
+#login-global-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 #login_card{
   background-color: $color-tertiary;
   color: $color-secondary;

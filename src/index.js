@@ -8,6 +8,8 @@ import './styles/cdn.scss'
 import Login from './pages/Login'
 import App from './pages/App'
 import Survey from './pages/Survey'
+import HeadTags from './components/HeadTags.jsx'
+// Import components
 // Import router
 import {
   BrowserRouter,
@@ -17,10 +19,12 @@ import {
 } from "react-router-dom";
 // Import JavaScript CDN
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> // BootStrap 5
+// Import helmet
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
       <BrowserRouter>
+        <HeadTags/>
         <Routes>
           <Route path="/" element={<Navigate to="/auth/login" />} />
           <Route path="/auth/login" element={<Login />} />
