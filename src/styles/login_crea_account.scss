@@ -1,0 +1,89 @@
+$color-primary: #FD2D01;
+$color-secondary: #FFD7D7;
+$color-tertiary: #4E5166;
+
+.font-color{
+  &-tertiary{
+    color: $color-tertiary;
+  }
+}
+.bg-color{
+  &-secondary{
+    background-color: $color-secondary;
+  }
+}
+.global-container{
+  background-image: url('../assets/open_space_meeting.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.authHeader{
+  &-container{
+  margin:0;
+  padding: 15px 0 15px 0px;
+  background-color: $color-tertiary;
+  color: $color-secondary;
+  text-align:center;
+  }
+  &-title{
+    margin:0;
+  }
+}
+#login-global-container{
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+#login_card{
+  background-color: $color-tertiary;
+  color: $color-secondary;
+  border-radius: 25px;
+  padding-bottom: 15px;
+}
+.login{
+  &-button{
+    &-border{
+      border-color: $color-tertiary;
+    }
+    &:hover{
+      background-color: darken($color-secondary, 3%);
+      color: darken($color-tertiary, 3%);
+      border-color: darken($color-tertiary, 3%);
+    }
+  }
+}
+.text{
+  &-align{
+    &-center{
+      text-align:center;
+    }
+    &-left{
+      text-align:left;
+    }
+  }
+}
+#accountCreate{
+  &Text{
+  margin:0;
+  margin-top: 15px;
+  text-align:center;
+  }
+  &Link{
+    color: $color-secondary;
+    &:hover{
+      color: darken($color-secondary, 10%);
+    }
+  }
+}
+#logoContainer{
+  margin:0;
+  justify-content: center;
+}
+#bottomCompanyLogo{
+  max-height:150px;
+  max-width:250px;
+}

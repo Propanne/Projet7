@@ -2,13 +2,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 // Import styles
-import './index.css'
-import './styles/cdn.scss'
+import './styles/cdn.css'
 // Import pages
 import Login from './pages/Login'
-import App from './pages/App'
-import Survey from './pages/Survey'
 import HeadTags from './components/HeadTags.jsx'
+import CreaAccount from './pages/CreaAccount'
+import Posts from './pages/Posts'
+import CreatePost from './pages/CreatePost'
 // Import components
 // Import router
 import {
@@ -28,10 +28,11 @@ root.render(
         <Routes>
           <Route path="/" element={<Navigate to="/auth/login" />} />
           <Route path="/auth/login" element={<Login />} />
-          <Route path="/auth/signup" element={<Survey />} />
+          <Route path="/auth/signup" element={<CreaAccount />} />
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/posts/create" element={<CreatePost />} />
         </Routes>
       </BrowserRouter>
-
 );
 
 // If you want to start measuring performance in your app, pass a function

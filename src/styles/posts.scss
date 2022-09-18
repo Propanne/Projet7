@@ -1,0 +1,50 @@
+$color-primary: #FD2D01;
+$color-secondary: #FFD7D7;
+$color-tertiary: #4E5166;
+
+// ----------------------------------- LOGO
+.header-logo{
+      background-color: $color-tertiary;
+      padding: 15px 0px 15px 0px;
+}
+// ----------------------------------- NAVBAR
+.nav-tabs{
+  .nav-link.active, .nav-item.show .nav-link{
+    background-color: $color-secondary;
+    color: $color-tertiary;
+    border-color: $color-secondary;
+    font-weight: bold;
+  }
+}
+.nav-link{
+  background-color: lighten($color-secondary, 10%);
+}
+// ----------------------------------- POSTS CONTENT
+.post{
+  &-container{
+    background-color: $color-secondary;
+  }
+  &-list{
+    &-container{
+      background-color: green;
+      min-height: 100vh;
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &-single{
+    &-container{
+      height: 200px;
+    }
+    &-text{
+      overflow: scroll;
+    }
+    &-logo{
+      height:24px;
+      width:24px;
+      margin:0px 5px 0px 5px;
+    }
+  }
+}

@@ -9,6 +9,8 @@ Modules React:
 - styled-components => Gestion des CSS scop
 - node-sass => Gestion des fichiers scss
 - react-helmet => Gestion des head tags
+- react-bootstrap => Intégration de Bootstrap pour React
+- FontAwesome => Icones
 
 # Frameworks/Librairies
 Ce projet utilise les frameworks/librairies suivnantes:
