@@ -35,16 +35,29 @@ $color-tertiary: #4E5166;
     }
   }
   &-single{
+    &-super-container{
+      padding:5px;
+      height: 400px;
+    }
     &-container{
-      height: 200px;
+      height: 400px;
     }
     &-text{
       overflow: scroll;
+    }
+    &-image{
+      max-width: 100%;
     }
     &-logo{
       height:24px;
       width:24px;
       margin:0px 5px 0px 5px;
+      &:hover{
+        cursor:pointer;
+      }
     }
   }
+}
+.card-footer{
+  text-align: end;
 }
