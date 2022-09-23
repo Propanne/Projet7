@@ -8,16 +8,20 @@ $color-tertiary: #4E5166;
       padding: 15px 0px 15px 0px;
 }
 // ----------------------------------- NAVBAR
+.nav-justified .nav-item .nav-link {
+  background-color: lighten($color-secondary, 5%);
+  color: black;
+  border-color: $color-secondary;
+}
 .nav-tabs{
   .nav-link.active, .nav-item.show .nav-link{
     background-color: $color-secondary;
     color: $color-tertiary;
-    border-color: $color-secondary;
     font-weight: bold;
   }
 }
 .nav-link{
-  background-color: lighten($color-secondary, 10%);
+  background-color: lighten($color-secondary, 2%);
 }
 // ----------------------------------- POSTS CONTENT
 .post{
@@ -26,18 +30,18 @@ $color-tertiary: #4E5166;
   }
   &-list{
     &-container{
-      background-color: green;
-      min-height: 100vh;
       --bs-gutter-x: 1.5rem;
       --bs-gutter-y: 0;
       display: flex;
       flex-wrap: wrap;
+      align-content: flex-start;
     }
   }
   &-single{
     &-super-container{
       padding:5px;
       height: 400px;
+      margin: 5px 0px;
     }
     &-container{
       height: 400px;

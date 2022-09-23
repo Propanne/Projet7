@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom/client'
 // Import styles
 import './styles/cdn.css'
 // Import pages
-import Login from './pages/Login'
 import HeadTags from './components/HeadTags.jsx'
-import CreaAccount from './pages/CreaAccount'
-import Posts from './pages/Posts'
-import CreatePost from './pages/CreatePost'
+import CreatePosts from './pages/CreatePosts.jsx'
+import ListPosts from './pages/ListPosts.jsx'
+import Login from './pages/Login.jsx'
+import Signup from './pages/Signup.jsx'
 // Import components
 // Import router
 import {
@@ -27,10 +27,10 @@ root.render(
         <HeadTags/>
         <Routes>
           <Route path="/" element={<Navigate to="/auth/login" />} />
+          <Route path="/posts/create" element={<CreatePosts />} />
+          <Route path="/posts/list" element={<ListPosts />} />
           <Route path="/auth/login" element={<Login />} />
-          <Route path="/auth/signup" element={<CreaAccount />} />
-          <Route path="/posts" element={<Posts />} />
-          <Route path="/posts/create" element={<CreatePost />} />
+          <Route path="/auth/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
 );
